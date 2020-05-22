@@ -70,7 +70,7 @@ public class BatteryUtil {
         if(m.find()){
             voltage=Integer.parseInt(m.group(1))/1000*0.001;
         }
-        return voltage;
+        return voltage;     //in Volt
     }
 
     public static double currentParse(String data){
@@ -80,7 +80,7 @@ public class BatteryUtil {
         if(m.find()){
             current=Integer.parseInt(m.group(1))*0.001;
         }
-        return current;
+        return current;     //in mA
     }
 
     public static int chargeParse(String data){
